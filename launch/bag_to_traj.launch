@@ -1,0 +1,21 @@
+<launch>
+
+  <param name="outfile_path" value="/root/catkin_ws/src/bag_to_traj-master/kitti.txt"/>
+
+  <!-- topic_type is [path/odom/pose] which are selected based on nav_msgs/Path or nav_msgs/Odometry or geometry_msgs/PoseStamped -->
+  <!-- topic_name is TOPIC_NAME of .bag file -->
+  <!-- save_format is [TUM/KITTI] which is you want to save as-->
+  <param name="topic_type" value="pose"/>
+  <param name="topic_name" value="/ground_truth/pose"/>
+  <param name="save_format" value="KITTI"/>
+ 
+  <!-- run bag_to_traj -->
+  <node name="bag_to_traj" pkg="bag_to_traj" type="bag_to_traj" output="screen"/>
+
+  <!-- run rosbag -->
+  <node name="rosbag_play" pkg="rosbag" type="play"
+    args="/usr/myhome/dataset.bag"/>
+
+
+</launch>
+
