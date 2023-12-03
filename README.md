@@ -12,14 +12,14 @@ save nav_msgs/Odometry or nav_msgs/Path or geometry_msgs/PoseStamped message to 
 
 下载源码到工作空间的src文件夹：
 ```
-$ cd catkin_ws/src
-$  git clone https://gitee.com/hsiaochao/bag_to_traj
+cd catkin_ws/src
+git clone https://gitee.com/hsiaochao/bag_to_traj
 ```
 编译项目：
 ```
-$ cd catkin_ws
-$ source devel/setup.bash
-$ catkin_make
+cd catkin_ws
+source devel/setup.bash
+catkin_make
 ```
 #### 使用说明
 
