@@ -9,14 +9,11 @@ Description Using ROS system and C++language, refer to CMakeLists.txt for config
 #### Installation and Compilation
 Download this source code into the src folder of your catkin worksapce:
 ```
-cd catkin_ws/src
+cd ~/catkin_ws/src
 git clone https://github.com/hsiaochao/bag_to_traj
-```
-Compile the project:
-```
-cd catkin_ws
-source devel/setup.bash
+cd ../
 catkin_make
+source ~/catkin_ws/devel/setup.bash
 ```
 #### How to use it
 1. According to the prompts, modify the parameters in the launch file, including outfile_path, topic_type, topic_name, save_format, rosbag.
